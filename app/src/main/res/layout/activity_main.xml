@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="519dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:columnCount="2"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/hello"
+            android:background="#F2CF59"
+            android:onClick="playAudio"
+            android:tag="1"
+            android:text="Hello"
+            android:textColor="#081F96"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/welcome"
+            android:layout_width="102dp"
+            android:background="#FB8E7E"
+            android:onClick="playAudio"
+            android:tag="2"
+            android:text="Welcome"
+            android:textColor="#A30404"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/howareyou"
+            android:layout_width="164dp"
+            android:background="#8EC9BB"
+            android:onClick="playAudio"
+            android:tag="3"
+            android:text="How Are You?"
+            android:textColor="#8A1F49"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/goodevening"
+            android:background="#FA6E4F"
+            android:onClick="playAudio"
+            android:tag="4"
+            android:text="Good Evening!"
+            android:textColor="#1E0E57"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/please"
+            android:background="#84B4C8"
+            android:onClick="playAudio"
+            android:tag="5"
+            android:text="Please"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/mynameis"
+            android:layout_width="106dp"
+            android:background="#FEB68E"
+            android:onClick="playAudio"
+            android:tag="6"
+            android:text="My name is ..."
+            android:textColor="#004D40"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/ilivein"
+            android:background="#E6B655"
+            android:onClick="playAudio"
+            android:tag="7"
+            android:text="I live in ..."
+            android:textColor="#4A148C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/doyouspeak"
+            android:layout_width="98dp"
+            android:background="#70AE98"
+            android:onClick="playAudio"
+            android:tag="8"
+            android:text="Do you speak English?"
+            android:textColor="#751905"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/french"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="51dp"
+        android:background="#C51162"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:fontFamily="@font/anton" />
+
+</RelativeLayout>
